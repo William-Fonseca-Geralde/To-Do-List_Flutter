@@ -14,6 +14,14 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('Bem Vindo a Lista de Afazeres'),
       ),
+      body: const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Text('Hello World')
+          ],
+        ),
+      ),
     );
   }
 }
