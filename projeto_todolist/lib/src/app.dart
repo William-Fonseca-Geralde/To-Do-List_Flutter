@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_todolist/src/features/home/presentation/home_page.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -11,6 +12,9 @@ class App extends StatelessWidget {
           seedColor: Colors.blue.shade700
         )
       ),
+      routes: {
+        '/': (context) => const HomePage(),
+      },
     );
   }
 }
