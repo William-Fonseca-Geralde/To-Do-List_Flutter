@@ -14,11 +14,17 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('Bem Vindo a Lista de Afazeres'),
       ),
-      body: const Center(
+      body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Text('Hello World')
+            const Text('Hello World'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton.filled(onPressed: () {}, icon: const Icon(Icons.add))
+              ],
+            )
           ],
         ),
       ),
